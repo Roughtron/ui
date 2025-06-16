@@ -1,0 +1,114 @@
+.text-center {
+  text-align: center;
+}
+
+.text-right {
+  text-align: right;
+}
+
+.text {
+  font-size: var(--text) !important;
+}
+
+.caption {
+  font-size: var(--caption) !important;
+}
+
+.primary--text {
+  color: var(--primary) !important;
+}
+
+.white--text {
+  color: var(--white) !important;
+}
+
+.white-80--text {
+  color: var(--white-80) !important;
+}
+
+.white-60--text {
+  color: var(--white-60) !important;
+}
+
+.white-40--text {
+  color: var(--white-40);
+}
+
+.little-boy-blue--text {
+  color: var(--little-boy-blue);
+}
+
+.mauve--text {
+  color: var(--mauve);
+}
+
+.mantis--text {
+  color: var(--mantis);
+}
+
+.maize--text {
+  color: var(--maize);
+}
+
+.mauvelous--text {
+  color: var(--mauvelous);
+}
+
+.royal-orange--text {
+  color: var(--royal-orange);
+}
+
+.coral--text {
+  color: var(--coral);
+}
+
+.promo--text {
+  color: var(--promo-red);
+}
+
+.gray-100--text {
+  color: var(--gray-100);
+}
+
+.gray-200--text {
+  color: var(--gray-200);
+}
+
+.gray-600--text {
+  color: var(--gray-600);
+}
+
+.text-capitalize {
+  text-transform: capitalize!important;
+}
+
+.text-uppercase {
+  text-transform: uppercase!important;
+}
+
+.font-weight-normal {
+  font-weight: 400 !important;
+}
+
+.font-weight-semibold {
+  font-weight: 500 !important;
+}
+
+.font-weight-bold {
+  font-weight: 700 !important;
+}
+
+.nowrap {
+  white-space: nowrap;
+}
+
+.text-overflow {
+  width: inherit;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+
+.color-inherit {
+  color: inherit;
+}
