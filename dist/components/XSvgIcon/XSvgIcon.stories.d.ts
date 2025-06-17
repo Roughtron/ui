@@ -11,7 +11,7 @@ declare const meta: {
             default: null;
         };
         size: {
-            type: import('vue').PropType<TXCssSize>;
+            type: import('vue').PropType<import('../../types/shared.types').TXCssSize>;
             default: string;
         };
     }>, {}, {}, {}, {}, import('vue').ComponentOptionsMixin, import('vue').ComponentOptionsMixin, {}, string, import('vue').PublicProps, Readonly<import('vue').ExtractPropTypes<{
@@ -24,12 +24,12 @@ declare const meta: {
             default: null;
         };
         size: {
-            type: import('vue').PropType<TXCssSize>;
+            type: import('vue').PropType<import('../../types/shared.types').TXCssSize>;
             default: string;
         };
     }>> & Readonly<{}>, {
         color: string;
-        size: TXCssSize;
+        size: import('../../types/shared.types').TXCssSize;
     }, {}, {}, {}, string, import('vue').ComponentProvideOptions, true, {}, SVGSVGElement>;
 };
 export default meta;

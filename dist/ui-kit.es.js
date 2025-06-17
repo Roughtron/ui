@@ -1,4 +1,4 @@
-import { defineComponent as x, useCssVars as _, computed as n, ref as w, toValue as f, onMounted as B, withDirectives as $, createElementBlock as S, openBlock as i, createElementVNode as p, vShow as C, createBlock as s, normalizeClass as v, resolveDynamicComponent as P, mergeProps as u, withCtx as X, createCommentVNode as g, renderSlot as y } from "vue";
+import { defineComponent as x, useCssVars as _, computed as n, ref as w, toValue as f, onMounted as B, withDirectives as $, createElementBlock as S, openBlock as i, createElementVNode as p, vShow as C, createBlock as s, normalizeClass as v, resolveDynamicComponent as P, mergeProps as d, withCtx as X, createCommentVNode as g, renderSlot as y } from "vue";
 const I = {
   class: "x-svg-icon",
   "aria-hidden": "true"
@@ -20,7 +20,7 @@ const I = {
   },
   setup(e) {
     _((l) => ({
-      "78a9d942": d.value,
+      "78a9d942": u.value,
       fa7b55aa: h.value
     }));
     const t = w(!1), o = e, a = (l) => l.includes("px") ? l : `${l}px`, r = n(() => `#${A}-${o.name.toLowerCase()}`), c = n(() => {
@@ -36,7 +36,7 @@ const I = {
         width: l,
         height: l
       };
-    }), d = n(() => f(c).width), h = n(() => f(c).height);
+    }), u = n(() => f(c).width), h = n(() => f(c).height);
     return B(() => t.value = !0), (l, b) => $((i(), S("svg", I, [
       p("use", {
         href: r.value,
@@ -145,7 +145,7 @@ const I = {
         }
       ]
     ), c = n(() => ["primary", "danger"].includes(t.color) ? "white" : "primary");
-    return (d, h) => (i(), s(P(o.value), u({
+    return (u, h) => (i(), s(P(o.value), d({
       class: r.value,
       disabled: e.disabled
     }, a.value), {
@@ -158,32 +158,32 @@ const I = {
             mini: ""
           }, null, 8, ["color"])) : g("", !0),
           p("div", j, [
-            e.prepend ? (i(), s(m, u({
+            e.prepend ? (i(), s(m, d({
               key: 0,
               name: e.prepend,
               size: e.iconSize,
               class: "x-button__prepend"
             }, e.iconProps), null, 16, ["name", "size"])) : g("", !0),
-            e.icon ? (i(), s(m, u({
+            e.icon ? (i(), s(m, d({
               key: 1,
               name: e.icon,
               size: e.iconSize,
               class: "x-button__icon"
-            }, e.iconProps), null, 16, ["name", "size"])) : y(d.$slots, "default", { key: 2 }, void 0, !0),
-            e.append ? (i(), s(m, u({
+            }, e.iconProps), null, 16, ["name", "size"])) : y(u.$slots, "default", { key: 2 }, void 0, !0),
+            e.append ? (i(), s(m, d({
               key: 3,
               name: e.append,
               size: e.iconSize,
               class: "x-button__append"
             }, e.iconProps), null, 16, ["name", "size"])) : g("", !0),
-            y(d.$slots, "append", {}, void 0, !0)
+            y(u.$slots, "append", {}, void 0, !0)
           ])
         ])
       ]),
       _: 3
     }, 16, ["class", "disabled"]));
   }
-}), N = /* @__PURE__ */ z(D, [["__scopeId", "data-v-d6dc9600"]]);
+}), N = /* @__PURE__ */ z(D, [["__scopeId", "data-v-21cbac7a"]]);
 export {
   N as XButton,
   V as XLoader,

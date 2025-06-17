@@ -17,9 +17,6 @@
       "import": "./dist/ui-kit.es.js",
       "require": "./dist/ui-kit.cjs.js",
       "types": "./dist/types/index.d.ts"
-    },
-    "./dist/ui.thestage.ai.css": {
-      "default": "./dist/ui.thestage.ai.css"
     }
   },
   "peerDependencies": {

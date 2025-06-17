@@ -2,7 +2,7 @@
 import { computed, type PropType } from 'vue';
 import XSvgIcon from '../XSvgIcon/XSvgIcon.vue';
 import XLoader from '../XLoader/XLoader.vue';
-import { type TXCssSize } from '@/types/shared.types'
+import { type TXCssSize } from '@/types/shared.types';
 
 const props = defineProps({
   color: {

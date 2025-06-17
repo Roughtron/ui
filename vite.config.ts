@@ -26,7 +26,7 @@ export default defineConfig({
   ],
   build: {
     lib: {
-      entry: 'src/components/index.ts',
+      entry: 'src/index.ts',
       name: 'ui-kit',
       fileName: (format) => `ui-kit.${format}.js`,
       formats: ['es', 'cjs']
