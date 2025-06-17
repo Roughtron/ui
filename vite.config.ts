@@ -1,6 +1,7 @@
 import path from 'path';
 import { defineConfig } from 'vite';
 import vue from '@vitejs/plugin-vue';
+import dts from 'vite-plugin-dts';
 import { createSvgIconsPlugin } from 'vite-plugin-svg-icons';
 
 export default defineConfig({
@@ -16,6 +17,23 @@ export default defineConfig({
       inject: 'body-last',
       customDomId: '__svg__icons__dom__',
     }),
-    vue()
+    vue(),
+    dts({ insertTypesEntry: true })
   ],
+  build: {
+    lib: {
+      entry: 'src/components/index.ts',
+      name: 'ui-kit',
+      fileName: (format) => `ui-kit.${format}.js`,
+      formats: ['es', 'cjs']
+    },
+    rollupOptions: {
+      external: ['vue'],
+      output: {
+        globals: {
+          vue: 'Vue'
+        }
+      }
+    }
+  }
 })
