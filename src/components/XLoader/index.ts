@@ -1,1 +1,0 @@
-export { default as XLoader } from './XLoader.vue';
