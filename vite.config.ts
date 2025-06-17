@@ -18,7 +18,11 @@ export default defineConfig({
       customDomId: '__svg__icons__dom__',
     }),
     vue(),
-    dts({ insertTypesEntry: true })
+    dts({
+      insertTypesEntry: true,
+      include: ['src'],
+      tsconfigPath: './tsconfig.app.json',
+    })
   ],
   build: {
     lib: {
