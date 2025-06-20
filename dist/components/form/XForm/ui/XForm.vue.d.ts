@@ -1,4 +1,4 @@
-import { FormSubmitPayload, Actions } from '../types';
+import { FormSubmitPayload } from '../types';
 declare function __VLS_template(): {
     attrs: Partial<{}>;
     slots: {
