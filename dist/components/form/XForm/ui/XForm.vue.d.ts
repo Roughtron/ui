@@ -1,4 +1,4 @@
-import { FormSubmitPayload } from '../types';
+import { FormSubmitPayload, FormActions } from '../types';
 declare function __VLS_template(): {
     attrs: Partial<{}>;
     slots: {
@@ -257,9 +257,9 @@ declare const __VLS_component: import('vue').DefineComponent<{}, {
     validate: () => Promise<any>;
     resetForm: () => void;
 }, {}, {}, {}, import('vue').ComponentOptionsMixin, import('vue').ComponentOptionsMixin, {} & {
-    submit: (model: FormSubmitPayload<any>, actions: Actions) => any;
+    submit: (model: FormSubmitPayload<any>, actions: FormActions) => any;
 }, string, import('vue').PublicProps, Readonly<{}> & Readonly<{
-    onSubmit?: ((model: FormSubmitPayload<any>, actions: Actions) => any) | undefined;
+    onSubmit?: ((model: FormSubmitPayload<any>, actions: FormActions) => any) | undefined;
 }>, {}, {}, {}, {}, string, import('vue').ComponentProvideOptions, true, {
     veeform: ({
         $: import('vue').ComponentInternalInstance;

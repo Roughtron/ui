@@ -1,14 +1,14 @@
 <script setup lang="ts">
 import { ref, useTemplateRef } from 'vue';
 import { Form as VeeForm } from 'vee-validate';
-import { type FormSubmitPayload, type Actions } from '../types';
+import { type FormSubmitPayload, type FormActions } from '../types';
 
 const form = useTemplateRef<HTMLElement>('form');
 
 const veeform = useTemplateRef<HTMLFormElement>('form');
 
 const emit = defineEmits<{
-  (e: 'submit', model: FormSubmitPayload<any>, actions: Actions): void
+  (e: 'submit', model: FormSubmitPayload<any>, actions: FormActions): void
 }>();
 
 const submit = () => {
@@ -23,7 +23,7 @@ const resetForm = () => {
   veeform.value?.resetForm();
 };
 
-const onSubmit = (model: FormSubmitPayload<any>, actions: Actions) => {
+const onSubmit = (model: FormSubmitPayload<any>, actions: FormActions) => {
   emit('submit', model, actions);
 };
 
