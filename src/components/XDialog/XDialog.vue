@@ -1,12 +1,10 @@
 <script setup lang="ts">
 import { computed } from 'vue';
-import { useRouter } from 'vue-router';
 import { GlobalEvents } from 'vue-global-events';
 import XButton from '../XButton/XButton.vue';
 import XLoader from '../XLoader/XLoader.vue';
 import useDialog from './composables/useDialog';
 
-const router = useRouter();
 const { $dialog } = useDialog();
 
 const emit = defineEmits<{
@@ -93,12 +91,6 @@ const close = () => {
 
   $dialog.hide();
 };
-
-router.beforeEach(async (to, from) => {
-  if (to.name !== from.name) {
-    close();
-  }
-});
 
 const cancel = () => {
   if (props.onCancel) {

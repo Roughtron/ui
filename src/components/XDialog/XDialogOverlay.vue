@@ -1,6 +1,5 @@
 <script setup lang="ts">
-import { PropType } from 'vue';
-import type { Component } from 'vue';
+import { type PropType, type Component } from 'vue';
 
 defineOptions({
   inheritAttrs: false,
