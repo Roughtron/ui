@@ -1,8 +1,8 @@
 import type { Meta, StoryObj } from '@storybook/vue3-vite';
-import XLoader from './XLoader.vue';
+import XLoader from './ui/XLoader.vue';
 
 const meta = {
-  title: 'UI/XLoader',
+  title: 'UI/General/XLoader',
   component: XLoader,
   argTypes: {
     color: {

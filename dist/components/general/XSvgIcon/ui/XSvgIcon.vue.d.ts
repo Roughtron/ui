@@ -1,5 +1,5 @@
 import { PropType } from 'vue';
-import { CssSize } from '../../../types/shared.types';
+import { CssSize } from '../../../../types/shared.types';
 declare const _default: import('vue').DefineComponent<import('vue').ExtractPropTypes<{
     name: {
         type: StringConstructor;

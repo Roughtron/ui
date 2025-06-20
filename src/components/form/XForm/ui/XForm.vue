@@ -1,7 +1,7 @@
 <script setup lang="ts">
 import { ref } from 'vue';
 import { Form as VeeForm } from 'vee-validate';
-import { FormSubmitPayload, Actions } from '@/types/Form';
+import { type FormSubmitPayload, type Actions } from '../types';
 
 const form = ref<HTMLFormElement>();
 

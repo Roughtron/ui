@@ -1,5 +1,5 @@
 import { PropType } from 'vue';
-import { CssSize } from '../../../types/shared.types';
+import { CssSize } from '../../../../types/shared.types';
 declare function __VLS_template(): {
     attrs: Partial<{}>;
     slots: {

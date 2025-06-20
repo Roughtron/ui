@@ -1,9 +1,9 @@
 import type { Meta, StoryObj } from '@storybook/vue3-vite';
 import { fn } from 'storybook/test';
-import XButton from './XButton.vue';
+import XButton from './ui/XButton.vue';
 
 const meta = {
-  title: 'UI/XButton',
+  title: 'UI/General/XButton',
   component: XButton,
   argTypes: {
     color: {

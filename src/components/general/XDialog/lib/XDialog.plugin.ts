@@ -1,7 +1,7 @@
 import { h, getCurrentInstance, createApp, shallowRef } from 'vue';
 import { type Component, type App, type ComponentPublicInstance, type ComponentInternalInstance, toValue } from 'vue';
-import { type Dialog, type ComponentPayload, type DialogOptions } from './types';
-import XDialogOverlay from './XDialogOverlay.vue';
+import { type Dialog, type ComponentPayload, type DialogOptions } from '../types';
+import XDialogOverlay from '../ui/XDialogOverlay.vue';
 
 export default {
   install: (app: App, pluginOptions: DialogOptions) => {

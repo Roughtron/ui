@@ -1,9 +1,9 @@
 <script setup lang="ts">
 import { computed } from 'vue';
 import { GlobalEvents } from 'vue-global-events';
-import XButton from '../XButton/XButton.vue';
-import XLoader from '../XLoader/XLoader.vue';
-import useDialog from './composables/useDialog';
+import { XButton } from '@general/XButton';
+import { XLoader } from '@general/XLoader';
+import useDialog from '../composables/useDialog';
 
 const { $dialog } = useDialog();
 

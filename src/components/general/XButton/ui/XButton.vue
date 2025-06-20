@@ -1,7 +1,7 @@
 <script setup lang="ts">
 import { computed, type PropType } from 'vue';
-import XSvgIcon from '../XSvgIcon/XSvgIcon.vue';
-import XLoader from '../XLoader/XLoader.vue';
+import { XSvgIcon } from '@general/XSvgIcon';
+import { XLoader } from '@general/XLoader';
 import { type CssSize } from '@/types/shared.types';
 
 const props = defineProps({

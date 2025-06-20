@@ -1,6 +1,6 @@
 <script setup lang="ts">
 import { computed } from 'vue';
-import XSvgIcon from '../XSvgIcon/XSvgIcon.vue';
+import { XSvgIcon } from '@general/XSvgIcon';
 
 const props = defineProps({
   color: {
