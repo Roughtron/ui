@@ -1,0 +1,1 @@
+export { default as useThrottleEvent } from './common/useThrottleEvent';

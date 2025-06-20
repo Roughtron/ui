@@ -11,6 +11,7 @@ export default defineConfig({
       '@': path.resolve(__dirname, './src'),
       '@general': path.resolve(__dirname, './src/components/general'),
       '@form': path.resolve(__dirname, './src/components/form'),
+      '@layout': path.resolve(__dirname, './src/components/layout'),
     },
   },
   plugins: [

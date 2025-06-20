@@ -1,11 +1,11 @@
 <script setup lang="ts">
-import { ref } from 'vue';
+import { ref, useTemplateRef } from 'vue';
 import { Form as VeeForm } from 'vee-validate';
 import { type FormSubmitPayload, type Actions } from '../types';
 
-const form = ref<HTMLFormElement>();
+const form = useTemplateRef<HTMLElement>('form');
 
-const veeform = ref<HTMLFormElement>();
+const veeform = useTemplateRef<HTMLFormElement>('form');
 
 const emit = defineEmits<{
   (e: 'submit', model: FormSubmitPayload<any>, actions: Actions): void

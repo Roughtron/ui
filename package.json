@@ -26,8 +26,16 @@
     "vue": "^3.0.0"
   },
   "dependencies": {
+    "@vueform/slider": "^2.1.10",
+    "dayjs": "^1.11.13",
+    "floating-vue": "^5.2.2",
+    "maska": "^3.1.1",
+    "vee-validate": "^4.15.1",
     "vue": "^3.0.0",
-    "vue-global-events": "^3.0.1"
+    "vue-global-events": "^3.0.1",
+    "vue-multiselect": "^3.2.0",
+    "vue3-observe-visibility": "^1.0.3",
+    "yup": "^1.6.1"
   },
   "devDependencies": {
     "@chromatic-com/storybook": "^4.0.0",

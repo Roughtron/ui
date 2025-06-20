@@ -17,6 +17,7 @@
       "@/*": ["./src/*"],
       "@general/*": ["./src/components/general/*"],
       "@form/*": ["./src/components/form/*"],
+      "@layout/*": ["./src/components/layout/*"],
     }
   },
   "include": ["src/**/*.ts", "src/**/*.d.ts", "src/**/*.tsx", "src/**/*.vue"],

@@ -1,0 +1,1 @@
+export { default as XMark } from './ui/XMark.vue';
