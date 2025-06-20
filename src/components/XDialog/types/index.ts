@@ -1,5 +1,4 @@
 import type { Component } from 'vue';
-import type { Router } from 'vue-router';
 
 export interface ComponentPayload {
   props?: Function,
@@ -13,6 +12,5 @@ export interface Dialog {
 }
 
 export interface DialogOptions {
-  router: Router,
   globalProperties: Record<string, any>
 }

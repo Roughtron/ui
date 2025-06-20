@@ -25,9 +25,9 @@ const se = {
     }));
     const t = R(!1), o = e, l = (i) => i.includes("px") ? i : `${i}px`, n = d(() => `#${ie}-${o.name.toLowerCase()}`), s = d(() => {
       if (Array.isArray(o.size)) {
-        const [b, p] = o.size;
+        const [g, p] = o.size;
         return {
-          width: l(b),
+          width: l(g),
           height: l(p)
         };
       }
@@ -37,7 +37,7 @@ const se = {
         height: i
       };
     }), u = d(() => x(s).width), m = d(() => x(s).height);
-    return U(() => t.value = !0), (i, b) => H((a(), S("svg", se, [
+    return U(() => t.value = !0), (i, g) => H((a(), S("svg", se, [
       w("use", {
         href: n.value,
         fill: e.color
@@ -220,10 +220,10 @@ function pe() {
   return N ?? (N = /msie|trident/.test(window.navigator.userAgent.toLowerCase()));
 }
 const fe = /^on(\w+?)((?:Once|Capture|Passive)*)$/, ve = /[OCP]/g;
-function be(e) {
+function ge(e) {
   return e ? pe() ? e.includes("Capture") : e.replace(ve, ",$&").toLowerCase().slice(1).split(",").reduce((o, l) => (o[l] = !0, o), {}) : void 0;
 }
-const ge = $({
+const be = $({
   name: "GlobalEvents",
   props: {
     target: {
@@ -256,24 +256,24 @@ const ge = $({
           );
           return;
         }
-        let [, i, b] = m;
+        let [, i, g] = m;
         i = i.toLowerCase();
         const p = u.map(
           (h) => (y) => {
             const r = Array.isArray(e.filter) ? e.filter : [e.filter];
             l.value && r.every((C) => C(y, h, i)) && (e.stop && y.stopPropagation(), e.prevent && y.preventDefault(), h(y));
           }
-        ), g = be(b);
+        ), b = ge(g);
         p.forEach((h) => {
           window[e.target].addEventListener(
             i,
             h,
-            g
+            b
           );
         }), o[n] = [
           p,
           i,
-          g
+          b
         ];
       });
     }), W(() => {
@@ -286,7 +286,7 @@ const ge = $({
       o = {};
     }), () => null;
   }
-}), he = ge, ye = () => ({ $dialog: K("$dialog") }), xe = ["data-test-id"], Se = { class: "x-dialog__in" }, _e = ["title"], we = { class: "x-dialog__content-container" }, ke = {
+}), he = be, ye = () => ({ $dialog: K("$dialog") }), xe = ["data-test-id"], Se = { class: "x-dialog__in" }, _e = ["title"], we = { class: "x-dialog__content-container" }, ke = {
   key: 0,
   class: "x-dialog__description"
 }, $e = {
@@ -353,7 +353,7 @@ const ge = $({
       size: "xs",
       disabled: s.submitDisabled,
       ...s.submitProps
-    })), b = d(() => ({
+    })), g = d(() => ({
       class: "x-dialog__close-btn",
       icon: "close",
       size: "xxs",
@@ -366,10 +366,10 @@ const ge = $({
     o.beforeEach(async (r, C) => {
       r.name !== C.name && p();
     });
-    const g = () => {
+    const b = () => {
       s.onCancel ? n("cancel") : (n("cancel"), l.hide());
     }, h = () => {
-      s.persistent || g();
+      s.persistent || b();
     }, y = () => {
       s.onSubmit ? n("submit") : (n("submit"), l.hide());
     };
@@ -404,7 +404,7 @@ const ge = $({
         e.noActions ? c("", !0) : v(r.$slots, "footer", { key: 1 }, () => [
           w("div", Ce, [
             e.noCancel ? c("", !0) : v(r.$slots, "cancel", { key: 0 }, () => [
-              E(I, _(m.value, { onClick: g }), {
+              E(I, _(m.value, { onClick: b }), {
                 default: k(() => [
                   z(B(e.cancelText), 1)
                 ]),
@@ -423,7 +423,7 @@ const ge = $({
           v(r.$slots, "extra-footer", {}, void 0, !0)
         ], !0)
       ]),
-      e.persistent ? c("", !0) : (a(), f(I, _({ key: 0 }, b.value, { onClick: p }), null, 16)),
+      e.persistent ? c("", !0) : (a(), f(I, _({ key: 0 }, g.value, { onClick: p }), null, 16)),
       E(Y(he), {
         onKeyup: Z(h, ["esc"])
       })
@@ -479,22 +479,22 @@ const ge = $({
     let o = null;
     const l = O(!1), n = O({}), s = O({}), u = {
       show(m, i) {
-        const b = oe();
+        const g = oe();
         if (!o) {
           const p = document.createElement("div");
           p.id = "x-dialog-container", document.body.appendChild(p);
-          const g = ne({
+          const b = ne({
             provide: () => ({ $dialog: u }),
             render: () => X(Pe, { show: x(l), component: x(s) })
           });
           Object.entries(t.globalProperties).forEach(([h, y]) => {
-            g.config.globalProperties[h] = y;
-          }), o = g.use(t.router).mount(`#${p.id}`);
+            b.config.globalProperties[h] = y;
+          }), o = b.mount(`#${p.id}`);
         }
         x(s) && (n.value = x(s)), s.value = {
           render: () => X(
             m,
-            Ae(b, i)
+            Ae(g, i)
           )
         }, l.value = !0, o.$forceUpdate();
       },

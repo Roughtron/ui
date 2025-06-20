@@ -1,5 +1,4 @@
 import { Component } from 'vue';
-import { Router } from 'vue-router';
 export interface ComponentPayload {
     props?: Function;
     on?: {
@@ -12,6 +11,5 @@ export interface Dialog {
     hide(): void;
 }
 export interface DialogOptions {
-    router: Router;
     globalProperties: Record<string, any>;
 }

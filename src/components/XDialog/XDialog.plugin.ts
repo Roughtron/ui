@@ -29,7 +29,7 @@ export default {
             app.config.globalProperties[name] = property;
           });
 
-          instance = app.use(pluginOptions.router).mount(`#${container.id}`);
+          instance = app.mount(`#${container.id}`);
         }
 
         if (toValue(currentComponent)) {
