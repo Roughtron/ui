@@ -14,7 +14,7 @@ declare const meta: {
                 validator: (v: string) => boolean;
             };
             iconSize: {
-                type: import('vue').PropType<import('../..').CssSize>;
+                type: import('vue').PropType<import('../../..').CssSize>;
             };
             iconProps: {
                 type: ObjectConstructor;
@@ -69,7 +69,7 @@ declare const meta: {
                 validator: (v: string) => boolean;
             };
             iconSize: {
-                type: import('vue').PropType<import('../..').CssSize>;
+                type: import('vue').PropType<import('../../..').CssSize>;
             };
             iconProps: {
                 type: ObjectConstructor;
@@ -121,7 +121,7 @@ declare const meta: {
             validator: (v: string) => boolean;
         };
         iconSize: {
-            type: import('vue').PropType<import('../..').CssSize>;
+            type: import('vue').PropType<import('../../..').CssSize>;
         };
         iconProps: {
             type: ObjectConstructor;

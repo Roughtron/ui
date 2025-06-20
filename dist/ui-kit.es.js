@@ -1,4 +1,4 @@
-import { defineComponent as w, useCssVars as R, computed as d, ref as L, toValue as h, onMounted as j, withDirectives as q, createElementBlock as y, openBlock as a, createElementVNode as _, vShow as F, createBlock as g, normalizeClass as E, resolveDynamicComponent as V, mergeProps as S, withCtx as $, createCommentVNode as c, renderSlot as p, onActivated as G, onDeactivated as K, onBeforeUnmount as M, inject as H, createVNode as k, createTextVNode as C, toDisplayString as z, unref as J, withKeys as Q, Transition as X, KeepAlive as W, Suspense as Y, shallowRef as A, getCurrentInstance as Z, createApp as ee, h as T } from "vue";
+import { defineComponent as w, useCssVars as R, computed as d, ref as L, toValue as h, onMounted as j, withDirectives as q, createElementBlock as y, openBlock as a, createElementVNode as _, vShow as F, createBlock as f, normalizeClass as E, resolveDynamicComponent as V, mergeProps as S, withCtx as $, createCommentVNode as c, renderSlot as p, onActivated as G, onDeactivated as K, onBeforeUnmount as M, inject as H, createVNode as k, createTextVNode as C, toDisplayString as z, unref as J, withKeys as Q, Transition as X, KeepAlive as W, Suspense as Y, shallowRef as A, getCurrentInstance as Z, createApp as ee, h as T } from "vue";
 const te = {
   class: "x-svg-icon",
   "aria-hidden": "true"
@@ -20,15 +20,15 @@ const te = {
   },
   setup(e) {
     R((i) => ({
-      "4d93b69d": u.value,
-      "4b142330": m.value
+      "5b2334e1": u.value,
+      21172528: m.value
     }));
     const t = L(!1), n = e, s = (i) => i.includes("px") ? i : `${i}px`, o = d(() => `#${ne}-${n.name.toLowerCase()}`), l = d(() => {
       if (Array.isArray(n.size)) {
-        const [v, f] = n.size;
+        const [v, g] = n.size;
         return {
           width: s(v),
-          height: s(f)
+          height: s(g)
         };
       }
       const i = s(n.size);
@@ -73,7 +73,7 @@ const te = {
       class: E(n.value)
     }, o[0] || (o[0] = [
       _("div", { class: "x-loader__dot" }, null, -1)
-    ]), 2)) : (a(), g(B, {
+    ]), 2)) : (a(), f(B, {
       key: 1,
       class: E(n.value),
       name: "loader"
@@ -84,7 +84,7 @@ const te = {
   for (const [s, o] of t)
     n[s] = o;
   return n;
-}, N = /* @__PURE__ */ P(se, [["__scopeId", "data-v-2e151827"]]), ie = { class: "x-button__content" }, le = { class: "x-button__content-in" }, ae = /* @__PURE__ */ w({
+}, N = /* @__PURE__ */ P(se, [["__scopeId", "data-v-cefde415"]]), ie = { class: "x-button__content" }, le = { class: "x-button__content-in" }, ae = /* @__PURE__ */ w({
   __name: "XButton",
   props: {
     color: {
@@ -145,32 +145,32 @@ const te = {
         }
       ]
     ), l = d(() => ["primary", "danger"].includes(t.color) ? "white" : "primary");
-    return (u, m) => (a(), g(V(n.value), S({
+    return (u, m) => (a(), f(V(n.value), S({
       class: o.value,
       disabled: e.disabled
     }, s.value), {
       default: $(() => [
         _("div", ie, [
-          e.loading ? (a(), g(N, {
+          e.loading ? (a(), f(N, {
             key: 0,
             color: l.value,
             class: "x-button__loader",
             mini: ""
           }, null, 8, ["color"])) : c("", !0),
           _("div", le, [
-            e.prepend ? (a(), g(B, S({
+            e.prepend ? (a(), f(B, S({
               key: 0,
               name: e.prepend,
               size: e.iconSize,
               class: "x-button__prepend"
             }, e.iconProps), null, 16, ["name", "size"])) : c("", !0),
-            e.icon ? (a(), g(B, S({
+            e.icon ? (a(), f(B, S({
               key: 1,
               name: e.icon,
               size: e.iconSize,
               class: "x-button__icon"
             }, e.iconProps), null, 16, ["name", "size"])) : p(u.$slots, "default", { key: 2 }, void 0, !0),
-            e.append ? (a(), g(B, S({
+            e.append ? (a(), f(B, S({
               key: 3,
               name: e.append,
               size: e.iconSize,
@@ -183,7 +183,7 @@ const te = {
       _: 3
     }, 16, ["class", "disabled"]));
   }
-}), D = /* @__PURE__ */ P(ae, [["__scopeId", "data-v-5f451524"]]);
+}), D = /* @__PURE__ */ P(ae, [["__scopeId", "data-v-2269c40d"]]);
 /*!
  * vue-global-events v3.0.1
  * (c) 2019-2023 Eduardo San Martin Morote, Damian Dulisz
@@ -232,20 +232,20 @@ const me = w({
         }
         let [, i, v] = m;
         i = i.toLowerCase();
-        const f = u.map(
+        const g = u.map(
           (b) => (r) => {
             const O = Array.isArray(e.filter) ? e.filter : [e.filter];
             s.value && O.every((U) => U(r, b, i)) && (e.stop && r.stopPropagation(), e.prevent && r.preventDefault(), b(r));
           }
         ), x = de(v);
-        f.forEach((b) => {
+        g.forEach((b) => {
           window[e.target].addEventListener(
             i,
             b,
             x
           );
         }), n[o] = [
-          f,
+          g,
           i,
           x
         ];
@@ -260,7 +260,7 @@ const me = w({
       n = {};
     }), () => null;
   }
-}), fe = me, ge = () => ({ $dialog: H("$dialog") }), pe = ["data-test-id"], ve = { class: "x-dialog__in" }, be = ["title"], he = { class: "x-dialog__content-container" }, ye = {
+}), ge = me, fe = () => ({ $dialog: H("$dialog") }), pe = ["data-test-id"], ve = { class: "x-dialog__in" }, be = ["title"], he = { class: "x-dialog__content-container" }, ye = {
   key: 0,
   class: "x-dialog__description"
 }, xe = {
@@ -308,7 +308,7 @@ const me = w({
   },
   emits: ["cancel", "submit", "close"],
   setup(e, { emit: t }) {
-    const { $dialog: n } = ge(), s = t, o = e, l = d(() => [
+    const { $dialog: n } = fe(), s = t, o = e, l = d(() => [
       "x-dialog",
       `x-dialog--size-${o.size}`,
       {
@@ -336,10 +336,10 @@ const me = w({
       color: "white"
     })), v = () => {
       s("close"), n.hide();
-    }, f = () => {
+    }, g = () => {
       o.onCancel ? s("cancel") : (s("cancel"), n.hide());
     }, x = () => {
-      o.persistent || f();
+      o.persistent || g();
     }, b = () => {
       o.onSubmit ? s("submit") : (s("submit"), n.hide());
     };
@@ -374,7 +374,7 @@ const me = w({
         e.noActions ? c("", !0) : p(r.$slots, "footer", { key: 1 }, () => [
           _("div", _e, [
             e.noCancel ? c("", !0) : p(r.$slots, "cancel", { key: 0 }, () => [
-              k(D, S(u.value, { onClick: f }), {
+              k(D, S(u.value, { onClick: g }), {
                 default: $(() => [
                   C(z(e.cancelText), 1)
                 ]),
@@ -393,13 +393,13 @@ const me = w({
           p(r.$slots, "extra-footer", {}, void 0, !0)
         ], !0)
       ]),
-      e.persistent ? c("", !0) : (a(), g(D, S({ key: 0 }, i.value, { onClick: v }), null, 16)),
-      k(J(fe), {
+      e.persistent ? c("", !0) : (a(), f(D, S({ key: 0 }, i.value, { onClick: v }), null, 16)),
+      k(J(ge), {
         onKeyup: Q(x, ["esc"])
       })
     ], 10, pe));
   }
-}), Pe = /* @__PURE__ */ P($e, [["__scopeId", "data-v-7fe5ef1f"]]), we = {
+}), Pe = /* @__PURE__ */ P($e, [["__scopeId", "data-v-cc52c06b"]]), we = {
   key: 0,
   class: "x-dialog-overlay"
 }, ke = /* @__PURE__ */ w({
@@ -413,7 +413,7 @@ const me = w({
     }
   },
   setup(e) {
-    return (t, n) => (a(), g(X, {
+    return (t, n) => (a(), f(X, {
       name: "x-dialog-overlay-fade",
       mode: "out-in",
       appear: ""
@@ -426,10 +426,10 @@ const me = w({
             appear: ""
           }, {
             default: $(() => [
-              e.show ? (a(), g(W, { key: 0 }, [
-                (a(), g(Y, null, {
+              e.show ? (a(), f(W, { key: 0 }, [
+                (a(), f(Y, null, {
                   default: $(() => [
-                    e.component ? (a(), g(V(e.component), {
+                    e.component ? (a(), f(V(e.component), {
                       key: e.component.name
                     })) : c("", !0)
                   ]),
@@ -444,22 +444,22 @@ const me = w({
       _: 1
     }));
   }
-}), Ce = /* @__PURE__ */ P(ke, [["__scopeId", "data-v-708f71e0"]]), Ae = {
+}), Ce = /* @__PURE__ */ P(ke, [["__scopeId", "data-v-0ec1ee96"]]), Ae = {
   install: (e, t) => {
     let n = null;
     const s = A(!1), o = A({}), l = A({}), u = {
       show(m, i) {
         const v = Z();
         if (!n) {
-          const f = document.createElement("div");
-          f.id = "x-dialog-container", document.body.appendChild(f);
+          const g = document.createElement("div");
+          g.id = "x-dialog-container", document.body.appendChild(g);
           const x = ee({
             provide: () => ({ $dialog: u }),
             render: () => T(Ce, { show: h(s), component: h(l) })
           });
           Object.entries(t.globalProperties).forEach(([b, r]) => {
             x.config.globalProperties[b] = r;
-          }), n = x.mount(`#${f.id}`);
+          }), n = x.mount(`#${g.id}`);
         }
         h(l) && (o.value = h(l)), l.value = {
           render: () => T(
@@ -497,5 +497,6 @@ export {
   Pe as XDialog,
   Ae as XDialogPlugin,
   N as XLoader,
-  B as XSvgIcon
+  B as XSvgIcon,
+  fe as useDialog
 };

@@ -1,9 +1,11 @@
 import './styles/index.css';
 
-export { default as XSvgIcon } from './components/XSvgIcon/XSvgIcon.vue';
-export { default as XButton } from './components/XButton/XButton.vue';
-export { default as XLoader } from './components/XLoader/XLoader.vue';
-export { default as XDialog } from './components/XDialog/XDialog.vue';
-export { default as XDialogPlugin } from './components/XDialog/XDialog.plugin';
+/* ------ General ------ */
+export { default as XSvgIcon } from './components/general/XSvgIcon/XSvgIcon.vue';
+export { default as XButton } from './components/general/XButton/XButton.vue';
+export { default as XLoader } from './components/general/XLoader/XLoader.vue';
+export { default as XDialog } from './components/general/XDialog/XDialog.vue';
+export * from './components/general/XDialog';
+
 
 export * from './types/shared.types';
