@@ -1,1 +1,1 @@
-export type TXCssSize = string[] | string;
+export type CssSize = string[] | string;

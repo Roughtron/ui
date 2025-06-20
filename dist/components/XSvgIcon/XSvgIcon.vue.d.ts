@@ -1,5 +1,5 @@
 import { PropType } from 'vue';
-import { TXCssSize } from '../../types/shared.types';
+import { CssSize } from '../../types/shared.types';
 declare const _default: import('vue').DefineComponent<import('vue').ExtractPropTypes<{
     name: {
         type: StringConstructor;
@@ -10,7 +10,7 @@ declare const _default: import('vue').DefineComponent<import('vue').ExtractPropT
         default: null;
     };
     size: {
-        type: PropType<TXCssSize>;
+        type: PropType<CssSize>;
         default: string;
     };
 }>, {}, {}, {}, {}, import('vue').ComponentOptionsMixin, import('vue').ComponentOptionsMixin, {}, string, import('vue').PublicProps, Readonly<import('vue').ExtractPropTypes<{
@@ -23,11 +23,11 @@ declare const _default: import('vue').DefineComponent<import('vue').ExtractPropT
         default: null;
     };
     size: {
-        type: PropType<TXCssSize>;
+        type: PropType<CssSize>;
         default: string;
     };
 }>> & Readonly<{}>, {
     color: string;
-    size: TXCssSize;
+    size: CssSize;
 }, {}, {}, {}, string, import('vue').ComponentProvideOptions, true, {}, SVGSVGElement>;
 export default _default;

@@ -1,5 +1,5 @@
 import { PropType } from 'vue';
-import { TXCssSize } from '../../types/shared.types';
+import { CssSize } from '../../types/shared.types';
 declare function __VLS_template(): {
     attrs: Partial<{}>;
     slots: {
@@ -22,7 +22,7 @@ declare const __VLS_component: import('vue').DefineComponent<import('vue').Extra
         validator: (v: string) => boolean;
     };
     iconSize: {
-        type: PropType<TXCssSize>;
+        type: PropType<CssSize>;
     };
     iconProps: {
         type: ObjectConstructor;
@@ -58,7 +58,7 @@ declare const __VLS_component: import('vue').DefineComponent<import('vue').Extra
         validator: (v: string) => boolean;
     };
     iconSize: {
-        type: PropType<TXCssSize>;
+        type: PropType<CssSize>;
     };
     iconProps: {
         type: ObjectConstructor;

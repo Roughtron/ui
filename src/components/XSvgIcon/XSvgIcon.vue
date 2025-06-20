@@ -1,6 +1,6 @@
 <script setup lang="ts">
 import { computed, toValue, type PropType, onMounted, ref } from 'vue';
-import { type TXCssSize } from '@/types/shared.types';
+import { type CssSize } from '@/types/shared.types';
 
 const isShow = ref(false);
 const prefix = 'icon';
@@ -15,7 +15,7 @@ const props = defineProps({
     default: null,
   },
   size: {
-    type: [String, Array] as PropType<TXCssSize>,
+    type: [String, Array] as PropType<CssSize>,
     default: '20px',
   },
 });

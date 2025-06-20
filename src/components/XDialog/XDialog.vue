@@ -2,9 +2,9 @@
 import { computed } from 'vue';
 import { useRouter } from 'vue-router';
 import { GlobalEvents } from 'vue-global-events';
-import { XButton, XLoader } from 'ui-kit';
-import __ from '@/plugins/i18n/i18n';
-import useDialog from '@/composables/dialog/useDialog';
+import XButton from '../XButton/XButton.vue';
+import XLoader from '../XLoader/XLoader.vue';
+import useDialog from './composables/useDialog';
 
 const router = useRouter();
 const { $dialog } = useDialog();
@@ -26,13 +26,13 @@ const props = defineProps({
   description: String,
   cancelText: {
     type: String,
-    default: __('Cancel'),
+    default: 'Cancel',
   },
   cancelDisabled: Boolean,
   cancelProps: Object,
   submitText: {
     type: String,
-    default: __('Submit'),
+    default: 'Submit',
   },
   submitDisabled: Boolean,
   submitProps: Object,
@@ -45,7 +45,7 @@ const props = defineProps({
   size: {
     type: String,
     default: 's',
-    validator: (v:string) => ['xs', 's', 'm'].includes(v),
+    validator: (v: string) => ['xs', 's', 'm'].includes(v),
   },
   testId: {
     type: String,

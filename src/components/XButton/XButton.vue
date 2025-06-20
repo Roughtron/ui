@@ -2,7 +2,7 @@
 import { computed, type PropType } from 'vue';
 import XSvgIcon from '../XSvgIcon/XSvgIcon.vue';
 import XLoader from '../XLoader/XLoader.vue';
-import { type TXCssSize } from '@/types/shared.types';
+import { type CssSize } from '@/types/shared.types';
 
 const props = defineProps({
   color: {
@@ -16,7 +16,7 @@ const props = defineProps({
     validator: (v: string) => ['xxxs', 'xxs', 'xs', 's', 'm', 'l'].includes(v),
   },
   iconSize: {
-    type: [String, Array] as PropType<TXCssSize>,
+    type: [String, Array] as PropType<CssSize>,
   },
   iconProps: {
     type: Object,
