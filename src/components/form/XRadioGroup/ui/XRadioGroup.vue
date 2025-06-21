@@ -1,7 +1,6 @@
 <script setup lang="ts">
 import { computed, type PropType } from 'vue';
-import XRadio from '@/components/form/XRadio.vue';
-import { type Radio } from '@form/XRadio';
+import { XRadio, type Radio } from '@form/XRadio';
 import { XInput } from '@form/XInput';
 
 const props = defineProps({
