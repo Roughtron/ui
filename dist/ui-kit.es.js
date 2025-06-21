@@ -1,4 +1,4 @@
-import { defineComponent as $e, useCssVars as Ia, computed as T, ref as Ue, toValue as H, onMounted as br, withDirectives as vt, createElementBlock as se, openBlock as F, createElementVNode as ie, vShow as Ft, createBlock as ve, normalizeClass as De, unref as M, resolveDynamicComponent as Ts, mergeProps as ke, withCtx as de, createCommentVNode as pe, renderSlot as ce, onActivated as Iu, onDeactivated as ju, onBeforeUnmount as ja, inject as La, createVNode as me, createTextVNode as je, toDisplayString as Te, withKeys as wt, Transition as ti, KeepAlive as Lu, Suspense as Ru, shallowRef as Xr, getCurrentInstance as fn, createApp as Bu, h as ts, pushScopeId as zu, popScopeId as Hu, nextTick as mt, normalizeProps as Mt, guardReactiveProps as Wt, resolveComponent as ns, withScopeId as Uu, normalizeStyle as Sn, Fragment as Et, useAttrs as Cn, renderList as pn, provide as rs, isRef as ni, watch as Ie, onUnmounted as Ps, reactive as Vt, toRef as is, readonly as qu, watchEffect as Ra, warn as Yu, useTemplateRef as ri, useSlots as Ba, withModifiers as We, resolveDirective as Xu, createSlots as Wu, toRefs as Vr, vModelDynamic as Gu } from "vue";
+import { defineComponent as $e, useCssVars as Ia, computed as T, ref as He, toValue as H, onMounted as br, withDirectives as vt, createElementBlock as se, openBlock as F, createElementVNode as ie, vShow as Ft, createBlock as ve, normalizeClass as De, unref as M, resolveDynamicComponent as Ts, mergeProps as ke, withCtx as de, createCommentVNode as pe, renderSlot as ce, onActivated as Iu, onDeactivated as ju, onBeforeUnmount as ja, inject as La, createVNode as me, createTextVNode as je, toDisplayString as Te, withKeys as wt, Transition as ti, KeepAlive as Lu, Suspense as Ru, shallowRef as Xr, getCurrentInstance as fn, createApp as Bu, h as ts, pushScopeId as zu, popScopeId as Hu, nextTick as mt, normalizeProps as Mt, guardReactiveProps as Wt, resolveComponent as ns, withScopeId as Uu, normalizeStyle as Sn, Fragment as Et, useAttrs as Cn, renderList as pn, provide as rs, isRef as ni, watch as Ie, onUnmounted as Ps, reactive as Vt, toRef as is, readonly as qu, watchEffect as Ra, warn as Yu, useTemplateRef as ri, useSlots as Ba, withModifiers as We, resolveDirective as Xu, createSlots as Wu, toRefs as Vr, vModelDynamic as Gu } from "vue";
 const Ku = {
   class: "x-svg-icon",
   "aria-hidden": "true"
@@ -23,7 +23,7 @@ const Ku = {
       "7ee0a9e5": o.value,
       "436598e8": a.value
     }));
-    const t = Ue(!1), n = e, r = (l) => l.includes("px") ? l : `${l}px`, i = T(() => `#${Ju}-${n.name.toLowerCase()}`), s = T(() => {
+    const t = He(!1), n = e, r = (l) => l.includes("px") ? l : `${l}px`, i = T(() => `#${Ju}-${n.name.toLowerCase()}`), s = T(() => {
       if (Array.isArray(n.size)) {
         const [u, f] = n.size;
         return {
@@ -216,7 +216,7 @@ const ac = $e({
   },
   setup(e, { attrs: t }) {
     let n = /* @__PURE__ */ Object.create(null);
-    const r = Ue(!0);
+    const r = He(!0);
     return Iu(() => {
       r.value = !0;
     }), ju(() => {
@@ -2814,7 +2814,7 @@ const md = hd, vd = /* @__PURE__ */ $e({
     ]));
   }
 }), ol = /* @__PURE__ */ qe(xd, [["__scopeId", "data-v-99b428ca"]]), Sd = (e = 100) => {
-  const t = Ue(0);
+  const t = He(0);
   return {
     handleThrottleEvent: (r) => {
       const i = (/* @__PURE__ */ new Date()).getTime();
@@ -3584,7 +3584,7 @@ function tf(e, t) {
   };
 }
 function nf(e, t, n) {
-  const r = Ue(M(t));
+  const r = He(M(t));
   function i() {
     return n ? ft(n.initialValues.value, M(e), M(r)) : M(r);
   }
@@ -3598,7 +3598,7 @@ function nf(e, t, n) {
   const o = T(i);
   if (!n)
     return {
-      value: Ue(i()),
+      value: He(i()),
       initialValue: o,
       setInitialValue: s
     };
@@ -3640,7 +3640,7 @@ function sf(e, t, n, r) {
   }), s;
 }
 function of() {
-  const e = Ue([]);
+  const e = He([]);
   return {
     errors: e,
     setErrors: (t) => {
@@ -4189,7 +4189,7 @@ function bf(e) {
   var t;
   const n = yf++, r = (e == null ? void 0 : e.name) || "Form";
   let i = 0;
-  const s = Ue(!1), o = Ue(!1), a = Ue(0), l = [], u = Vt(Sl(e)), f = Ue([]), c = Ue({}), h = Ue({}), p = Ld(() => {
+  const s = He(!1), o = He(!1), a = He(0), l = [], u = Vt(Sl(e)), f = He([]), c = He({}), h = He({}), p = Ld(() => {
     h.value = f.value.reduce((g, b) => (g[Qn(H(b.path))] = b, g), {});
   });
   function m(g, b) {
@@ -4642,7 +4642,7 @@ function wf(e, t, n, r) {
   }), T(() => Object.assign(Object.assign({ initialValues: M(n) }, a), { valid: a.valid && !at(r.value).length, dirty: s.value }));
 }
 function xf(e, t, n) {
-  const r = Sl(n), i = Ue(r), s = Ue(Ae(r));
+  const r = Sl(n), i = He(r), s = He(Ae(r));
   function o(a, l) {
     l != null && l.force ? (i.value = Ae(a), s.value = Ae(a)) : (i.value = vr(Ae(i.value) || {}, Ae(a)), s.value = vr(Ae(s.value) || {}, Ae(a))), l != null && l.updateFields && e.value.forEach((u) => {
       if (u.touched)
@@ -6356,6 +6356,12 @@ const sp = ["onSubmit"], op = /* @__PURE__ */ $e({
       return delete r[i], t("update:modelValue", { ...r }), !0;
     }
   });
+}, pv = () => {
+  const e = He();
+  return { form: e, onSubmitForm: (n) => {
+    var r, i;
+    n ? (r = e.value) == null || r.$refs[n].submit() : (i = e.value) == null || i.submit();
+  } };
 }, lp = ["innerHTML"], up = /* @__PURE__ */ $e({
   __name: "XFieldError",
   props: {
@@ -6526,7 +6532,7 @@ const sp = ["onSubmit"], op = /* @__PURE__ */ $e({
       }, 1040, ["modelValue", "name"]))), 128))
     ]));
   }
-}), pv = /* @__PURE__ */ qe(wp, [["__scopeId", "data-v-11b46748"]]), hv = () => ({ formatter: (t, n, r) => t.map((i) => ({
+}), hv = /* @__PURE__ */ qe(wp, [["__scopeId", "data-v-11b46748"]]), mv = () => ({ formatter: (t, n, r) => t.map((i) => ({
   label: n[i],
   icon: r ? i : void 0,
   value: i
@@ -9196,7 +9202,7 @@ const Kh = { class: "x-select__before-list" }, Zh = { class: "x-select__no-resul
     Ia((q) => ({
       "6d42b355": e.flexWidth
     }));
-    const n = Cn(), r = Ue(null), i = t, s = e, o = Vt({
+    const n = Cn(), r = He(null), i = t, s = e, o = Vt({
       search: "",
       isOpen: !1,
       hovered: !1,
@@ -9778,7 +9784,7 @@ const es = /* @__PURE__ */ new WeakMap(), lm = (e, t) => {
   },
   emits: ["update:modelValue"],
   setup(e, { expose: t, emit: n }) {
-    const r = Cn(), i = Ue(), s = Vt({
+    const r = Cn(), i = He(), s = Vt({
       focused: !1
     }), o = e, a = n, { class: l = "", ...u } = r, f = T(() => (o.value || o.modelValue).toString()), c = T(() => typeof o.rounded == "boolean"), h = T(() => [
       "x-input",
@@ -10447,7 +10453,7 @@ const ym = {
       _: 1
     }, 16));
   }
-}), mv = /* @__PURE__ */ qe(Im, [["__scopeId", "data-v-a1436a82"]]);
+}), vv = /* @__PURE__ */ qe(Im, [["__scopeId", "data-v-a1436a82"]]);
 var ei = { exports: {} }, jm = ei.exports, Na;
 function Lm() {
   return Na || (Na = 1, function(e, t) {
@@ -10527,7 +10533,7 @@ function Lm() {
 var Rm = Lm();
 const Bm = /* @__PURE__ */ $i(Rm);
 xt.extend(Bm);
-const vv = () => ({ getDateTimeRange: (t, n) => {
+const gv = () => ({ getDateTimeRange: (t, n) => {
   const r = "DD/MM/YYYY HH:mm", { end: i } = n ?? {}, s = i ? xt.utc(i) : xt.utc().local(), o = xt.utc().local(), { startDate: a, startTime: l, endDate: u, endTime: f } = t;
   let c = null, h = null, p, m, y, v;
   switch (t.unit) {
@@ -10672,7 +10678,7 @@ const vv = () => ({ getDateTimeRange: (t, n) => {
       _: 1
     }, 8, ["name", "value"]));
   }
-}), gv = /* @__PURE__ */ qe(Wm, [["__scopeId", "data-v-730f2c8d"]]), Gm = ["name", "checked", "value", "disabled"], Km = /* @__PURE__ */ $e({
+}), yv = /* @__PURE__ */ qe(Wm, [["__scopeId", "data-v-730f2c8d"]]), Gm = ["name", "checked", "value", "disabled"], Km = /* @__PURE__ */ $e({
   inheritAttrs: !1,
   __name: "XRadio",
   props: {
@@ -10796,7 +10802,7 @@ const vv = () => ({ getDateTimeRange: (t, n) => {
       }, null, 8, ["modelValue", "name", "data-test-id"])
     ], 64));
   }
-}), yv = /* @__PURE__ */ qe(Zm, [["__scopeId", "data-v-af4446c0"]]);
+}), bv = /* @__PURE__ */ qe(Zm, [["__scopeId", "data-v-af4446c0"]]);
 function Yr(e) {
   return [null, void 0, !1].indexOf(e) !== -1;
 }
@@ -11239,8 +11245,8 @@ var Da = fu(function(e, t) {
       function gu() {
         Gn("update" + W.aria), Fi("update" + W.aria, function(w, k, O, z, ne) {
           Pe.forEach(function(J) {
-            var be = $[J], oe = _r(Se, J, 0, !0, !0, !0), Xe = _r(Se, J, 100, !0, !0, !0), He = ne[J], Me = String(d.ariaFormat.to(O[J]));
-            oe = ue.fromStepping(oe).toFixed(1), Xe = ue.fromStepping(Xe).toFixed(1), He = ue.fromStepping(He).toFixed(1), be.children[0].setAttribute("aria-valuemin", oe), be.children[0].setAttribute("aria-valuemax", Xe), be.children[0].setAttribute("aria-valuenow", He), be.children[0].setAttribute("aria-valuetext", Me);
+            var be = $[J], oe = _r(Se, J, 0, !0, !0, !0), Xe = _r(Se, J, 100, !0, !0, !0), Ue = ne[J], Me = String(d.ariaFormat.to(O[J]));
+            oe = ue.fromStepping(oe).toFixed(1), Xe = ue.fromStepping(Xe).toFixed(1), Ue = ue.fromStepping(Ue).toFixed(1), be.children[0].setAttribute("aria-valuemin", oe), be.children[0].setAttribute("aria-valuemax", Xe), be.children[0].setAttribute("aria-valuenow", Ue), be.children[0].setAttribute("aria-valuetext", Me);
           });
         });
       }
@@ -11261,14 +11267,14 @@ var Da = fu(function(e, t) {
         });
       }
       function bu(w) {
-        function k(He, Me) {
-          return Number((He + Me).toFixed(7));
+        function k(Ue, Me) {
+          return Number((Ue + Me).toFixed(7));
         }
         var O = yu(w), z = {}, ne = ue.xVal[0], J = ue.xVal[ue.xVal.length - 1], be = !1, oe = !1, Xe = 0;
-        return (O = l(O.slice().sort(function(He, Me) {
-          return He - Me;
-        })))[0] !== ne && (O.unshift(ne), be = !0), O[O.length - 1] !== J && (O.push(J), oe = !0), O.forEach(function(He, Me) {
-          var Be, Ne, Ze, nt, Ge, mo, ji, vo, go, yo, Li = He, Nn = O[Me + 1], bo = w.mode === n.PipsMode.Steps;
+        return (O = l(O.slice().sort(function(Ue, Me) {
+          return Ue - Me;
+        })))[0] !== ne && (O.unshift(ne), be = !0), O[O.length - 1] !== J && (O.push(J), oe = !0), O.forEach(function(Ue, Me) {
+          var Be, Ne, Ze, nt, Ge, mo, ji, vo, go, yo, Li = Ue, Nn = O[Me + 1], bo = w.mode === n.PipsMode.Steps;
           for (bo && (Be = ue.xNumSteps[Me]), Be || (Be = Nn - Li), Nn === void 0 && (Nn = Li), Be = Math.max(Be, 1e-7), Ne = Li; Ne <= Nn; Ne = k(Ne, Be)) {
             for (vo = (Ge = (nt = ue.toStepping(Ne)) - Xe) / (w.density || 1), yo = Ge / (go = Math.round(vo)), Ze = 1; Ze <= go; Ze += 1) z[(mo = Xe + Ze * yo).toFixed(5)] = [ue.fromStepping(mo), 0];
             ji = O.indexOf(Ne) > -1 ? n.PipsType.LargeValue : bo ? n.PipsType.SmallValue : n.PipsType.NoValue, !Me && be && Ne !== Nn && (ji = 0), Ne === Nn && oe || (z[nt.toFixed(5)] = [Ne, ji]), Xe = nt;
@@ -11276,10 +11282,10 @@ var Da = fu(function(e, t) {
         }), z;
       }
       function wu(w, k, O) {
-        var z, ne, J = Tt.createElement("div"), be = ((z = {})[n.PipsType.None] = "", z[n.PipsType.NoValue] = d.cssClasses.valueNormal, z[n.PipsType.LargeValue] = d.cssClasses.valueLarge, z[n.PipsType.SmallValue] = d.cssClasses.valueSub, z), oe = ((ne = {})[n.PipsType.None] = "", ne[n.PipsType.NoValue] = d.cssClasses.markerNormal, ne[n.PipsType.LargeValue] = d.cssClasses.markerLarge, ne[n.PipsType.SmallValue] = d.cssClasses.markerSub, ne), Xe = [d.cssClasses.valueHorizontal, d.cssClasses.valueVertical], He = [d.cssClasses.markerHorizontal, d.cssClasses.markerVertical];
+        var z, ne, J = Tt.createElement("div"), be = ((z = {})[n.PipsType.None] = "", z[n.PipsType.NoValue] = d.cssClasses.valueNormal, z[n.PipsType.LargeValue] = d.cssClasses.valueLarge, z[n.PipsType.SmallValue] = d.cssClasses.valueSub, z), oe = ((ne = {})[n.PipsType.None] = "", ne[n.PipsType.NoValue] = d.cssClasses.markerNormal, ne[n.PipsType.LargeValue] = d.cssClasses.markerLarge, ne[n.PipsType.SmallValue] = d.cssClasses.markerSub, ne), Xe = [d.cssClasses.valueHorizontal, d.cssClasses.valueVertical], Ue = [d.cssClasses.markerHorizontal, d.cssClasses.markerVertical];
         function Me(Ne, Ze) {
           var nt = Ze === d.cssClasses.value, Ge = nt ? be : oe;
-          return Ze + " " + (nt ? Xe : He)[d.ort] + " " + Ge[Ne];
+          return Ze + " " + (nt ? Xe : Ue)[d.ort] + " " + Ge[Ne];
         }
         function Be(Ne, Ze, nt) {
           if ((nt = k ? k(Ze, nt) : nt) !== n.PipsType.None) {
@@ -11323,9 +11329,9 @@ var Da = fu(function(e, t) {
             return Ne === O || O.contains(Ne) || w.composed && w.composedPath().shift() === O;
           };
           if (w.type === "touchstart") {
-            var He = Array.prototype.filter.call(w.touches, Xe);
-            if (He.length > 1) return !1;
-            be = He[0].pageX, oe = He[0].pageY;
+            var Ue = Array.prototype.filter.call(w.touches, Xe);
+            if (Ue.length > 1) return !1;
+            be = Ue[0].pageX, oe = Ue[0].pageY;
           } else {
             var Me = Array.prototype.find.call(w.changedTouches, Xe);
             if (!Me) return !1;
@@ -11393,12 +11399,12 @@ var Da = fu(function(e, t) {
         if (ro() || Ai(k)) return !1;
         var O = ["Left", "Right"], z = ["Down", "Up"], ne = ["PageDown", "PageUp"], J = ["Home", "End"];
         d.dir && !d.ort ? O.reverse() : d.ort && !d.dir && (z.reverse(), ne.reverse());
-        var be, oe = w.key.replace("Arrow", ""), Xe = oe === ne[0], He = oe === ne[1], Me = oe === z[0] || oe === O[0] || Xe, Be = oe === z[1] || oe === O[1] || He, Ne = oe === J[0], Ze = oe === J[1];
+        var be, oe = w.key.replace("Arrow", ""), Xe = oe === ne[0], Ue = oe === ne[1], Me = oe === z[0] || oe === O[0] || Xe, Be = oe === z[1] || oe === O[1] || Ue, Ne = oe === J[0], Ze = oe === J[1];
         if (!(Me || Be || Ne || Ze)) return !0;
         if (w.preventDefault(), Be || Me) {
           var nt = Me ? 0 : 1, Ge = ho(k)[nt];
           if (Ge === null) return !1;
-          Ge === !1 && (Ge = ue.getDefaultStep(Se[k], Me, d.keyboardDefaultStep)), Ge *= He || Xe ? d.keyboardPageMultiplier : d.keyboardMultiplier, Ge = Math.max(Ge, 1e-7), Ge *= Me ? -1 : 1, be = _e[k] + Ge;
+          Ge === !1 && (Ge = ue.getDefaultStep(Se[k], Me, d.keyboardDefaultStep)), Ge *= Ue || Xe ? d.keyboardPageMultiplier : d.keyboardMultiplier, Ge = Math.max(Ge, 1e-7), Ge *= Me ? -1 : 1, be = _e[k] + Ge;
         } else be = Ze ? d.spectrum.xVal[d.spectrum.xVal.length - 1] : d.spectrum.xVal[0];
         return gn(k, ue.toStepping(be), !0, !0), Ye("slide", k), Ye("update", k), Ye("change", k), Ye("set", k), !1;
       }
@@ -11446,14 +11452,14 @@ var Da = fu(function(e, t) {
         return (O ? k : w) + ", " + (O ? w : k);
       }
       function lo(w, k, O, z, ne) {
-        var J = O.slice(), be = z[0], oe = d.events.smoothSteps, Xe = [!w, w], He = [w, !w];
+        var J = O.slice(), be = z[0], oe = d.events.smoothSteps, Xe = [!w, w], Ue = [w, !w];
         z = z.slice(), w && z.reverse(), z.length > 1 ? z.forEach(function(Be, Ne) {
-          var Ze = _r(J, Be, J[Be] + k, Xe[Ne], He[Ne], !1, oe);
+          var Ze = _r(J, Be, J[Be] + k, Xe[Ne], Ue[Ne], !1, oe);
           Ze === !1 ? k = 0 : (k = Ze - J[Be], J[Be] = Ze);
-        }) : Xe = He = [!0];
+        }) : Xe = Ue = [!0];
         var Me = !1;
         z.forEach(function(Be, Ne) {
-          Me = gn(Be, O[Be] + k, Xe[Ne], He[Ne], !1, oe) || Me;
+          Me = gn(Be, O[Be] + k, Xe[Ne], Ue[Ne], !1, oe) || Me;
         }), Me && (z.forEach(function(Be) {
           Ye("update", Be), Ye("slide", Be);
         }), ne != null && Ye("drag", be));
@@ -11583,8 +11589,8 @@ var Cs = { name: "Slider", emits: ["input", "update:modelValue", "start", "slide
   const n = function(o, a, l) {
     const { value: u, modelValue: f, min: c } = Vr(o);
     let h = f && f.value !== void 0 ? f : u;
-    const p = Ue(h.value);
-    if (Yr(h.value) && (h = Ue(c.value)), Array.isArray(h.value) && h.value.length == 0) throw new Error("Slider v-model must not be an empty array");
+    const p = He(h.value);
+    if (Yr(h.value) && (h = He(c.value)), Array.isArray(h.value) && h.value.length == 0) throw new Error("Slider v-model must not be an empty array");
     return { value: h, initialValue: p };
   }(e), r = function(o, a, l) {
     const { classes: u, showTooltip: f, tooltipPosition: c, orientation: h } = Vr(o), p = T(() => ({ target: "slider-target", focused: "slider-focused", tooltipFocus: "slider-tooltip-focus", tooltipDrag: "slider-tooltip-drag", ltr: "slider-ltr", rtl: "slider-rtl", horizontal: "slider-horizontal", vertical: "slider-vertical", textDirectionRtl: "slider-txt-dir-rtl", textDirectionLtr: "slider-txt-dir-ltr", base: "slider-base", connects: "slider-connects", connect: "slider-connect", origin: "slider-origin", handle: "slider-handle", handleLower: "slider-handle-lower", handleUpper: "slider-handle-upper", touchArea: "slider-touch-area", tooltip: "slider-tooltip", tooltipTop: "slider-tooltip-top", tooltipBottom: "slider-tooltip-bottom", tooltipLeft: "slider-tooltip-left", tooltipRight: "slider-tooltip-right", tooltipHidden: "slider-tooltip-hidden", active: "slider-active", draggable: "slider-draggable", tap: "slider-state-tap", drag: "slider-state-drag", pips: "slider-pips", pipsHorizontal: "slider-pips-horizontal", pipsVertical: "slider-pips-vertical", marker: "slider-marker", markerHorizontal: "slider-marker-horizontal", markerVertical: "slider-marker-vertical", markerNormal: "slider-marker-normal", markerLarge: "slider-marker-large", markerSub: "slider-marker-sub", value: "slider-value", valueHorizontal: "slider-value-horizontal", valueVertical: "slider-value-vertical", valueNormal: "slider-value-normal", valueLarge: "slider-value-large", valueSub: "slider-value-sub", ...u.value }));
@@ -11624,7 +11630,7 @@ var Cs = { name: "Slider", emits: ["input", "update:modelValue", "start", "slide
       });
     } };
   }(e, 0, { value: n.value, classList: r.classList }), s = function(o, a, l) {
-    const { orientation: u, direction: f, tooltips: c, step: h, min: p, max: m, merge: y, id: v, disabled: x, options: _, classes: V, format: X, lazy: I, ariaLabelledby: G, aria: Y } = Vr(o), te = l.value, D = l.initialValue, K = l.tooltipsFormat, N = l.tooltipsMerge, re = l.tooltipFormat, fe = l.classList, L = Ue(null), E = Ue(null), A = Ue(!1), j = T(() => {
+    const { orientation: u, direction: f, tooltips: c, step: h, min: p, max: m, merge: y, id: v, disabled: x, options: _, classes: V, format: X, lazy: I, ariaLabelledby: G, aria: Y } = Vr(o), te = l.value, D = l.initialValue, K = l.tooltipsFormat, N = l.tooltipsMerge, re = l.tooltipFormat, fe = l.classList, L = He(null), E = He(null), A = He(!1), j = T(() => {
       let C = { cssPrefix: "", cssClasses: fe.value, orientation: u.value, direction: f.value, tooltips: !!c.value && K.value, connect: "lower", start: Yr(te.value) ? p.value : te.value, range: { min: p.value, max: m.value } };
       if (h.value > 0 && (C.step = h.value), Array.isArray(te.value) && (C.connect = !0), G && G.value || Y && Object.keys(Y.value).length) {
         let B = Array.isArray(te.value) ? te.value : [te.value];
@@ -11711,7 +11717,7 @@ const ev = { class: "x-slider-input__prepend" }, tv = /* @__PURE__ */ $e({
   },
   emits: ["update:modelValue"],
   setup(e, { emit: t }) {
-    const n = e, r = t, i = Ue(n.modelValue), s = T(() => [
+    const n = e, r = t, i = He(n.modelValue), s = T(() => [
       "x-slider-input",
       `x-slider-input--${n.color}`,
       {
@@ -11743,7 +11749,7 @@ const ev = { class: "x-slider-input__prepend" }, tv = /* @__PURE__ */ $e({
       ])
     ], 2));
   }
-}), Ma = /* @__PURE__ */ qe(tv, [["__scopeId", "data-v-4f606fff"]]), nv = { class: "x-slider__boundaries" }, bv = /* @__PURE__ */ $e({
+}), Ma = /* @__PURE__ */ qe(tv, [["__scopeId", "data-v-4f606fff"]]), nv = { class: "x-slider__boundaries" }, wv = /* @__PURE__ */ $e({
   inheritAttrs: !1,
   __name: "XSlider",
   props: {
@@ -11928,21 +11934,21 @@ const ev = { class: "x-slider-input__prepend" }, tv = /* @__PURE__ */ $e({
       _: 3
     }, 8, ["name", "value", "class"]));
   }
-}), wv = /* @__PURE__ */ qe(av, [["__scopeId", "data-v-7d3a1b09"]]);
+}), xv = /* @__PURE__ */ qe(av, [["__scopeId", "data-v-7d3a1b09"]]);
 export {
   ze as DatepickerUnit,
   yr as SearchMode,
   it as XButton,
   ol as XCheckbox,
-  pv as XCheckboxGroup,
+  hv as XCheckboxGroup,
   oa as XCol,
-  mv as XDatePicker,
+  vv as XDatePicker,
   uv as XDialog,
   cv as XDialogPlugin,
   vd as XDivider,
   md as XDropdown,
   cp as XFieldError,
-  gv as XFileInput,
+  yv as XFileInput,
   op as XForm,
   Fr as XFormItem,
   Ln as XInput,
@@ -11952,18 +11958,19 @@ export {
   za as XLoader,
   Ha as XMark,
   Km as XRadio,
-  yv as XRadioGroup,
+  bv as XRadioGroup,
   Tp as XRow,
   gm as XSearch,
   Qh as XSelect,
-  bv as XSlider,
+  wv as XSlider,
   Je as XSvgIcon,
   jo as XTag,
-  wv as XTextarea,
+  xv as XTextarea,
   wr as XValidationFormItem,
-  hv as useCheckboxGroup,
-  vv as useDatepicker,
+  mv as useCheckboxGroup,
+  gv as useDatepicker,
   uc as useDialog,
+  pv as useDialogForm,
   ap as useReactiveArrayModel,
   fv as useReactiveObjectModel,
   Sd as useThrottleEvent
